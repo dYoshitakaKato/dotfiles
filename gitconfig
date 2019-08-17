@@ -1,11 +1,20 @@
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+
 [user]
-	name = yoshitaka kato
+	name = dYoshitakaKato
 	email = phoenix1331019@gmail.com
+	signingkey = CA4F7FF3ADBBAEFBAE32E70275A9028FA895F27F
 
 [core]
     ignorecase = false
     quotepath = false
     safecrlf = true
+	excludesfile = /Users/yoshitaka.kato/.gitignore_global
 [alias]
     # 標準的なコマンド
     b = branch
@@ -85,12 +94,13 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
-[github]
-	user = davidcelis
 [grep]
 	extendedRegexp = true
 	fullName = true
 [commit]
 	gpgsign = true
+	template = /Users/yoshitaka.kato/.stCommitMsg
 [interactive]
 	diffFilter = diff-highlight
+[gpg]
+	program = gpg

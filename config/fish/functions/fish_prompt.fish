@@ -1,5 +1,5 @@
 function fish_prompt
-  set -l last_status $status
+	set -l last_status $status
 
   # Command timing
   echo -n -s (__fish_prompt_timing)

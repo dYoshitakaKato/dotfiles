@@ -1,7 +1,1 @@
----
-BUNDLE_PATH: "vendor/bundle"
-BUNDLE_JOBS: "8"
-BUNDLE_GEM__COC: "1"
-BUNDLE_GEM__MIT: "1"
-BUNDLE_GEM__TEST: "rspec"
-BUNDLE_IGNORE_MESSAGES: "true"
+/Users/yoshitaka.kato/src/github.com/dYoshitakaKato/dotfiles/./bundle/config

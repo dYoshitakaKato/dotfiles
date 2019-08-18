@@ -1,6 +1,6 @@
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -58,7 +58,7 @@
     # スタッシュを選択してdropする
     std = !git stl | xargs git stash drop
 [ghq]
-    root = ~/src
+  root = ~/src
 
 
 [credential]

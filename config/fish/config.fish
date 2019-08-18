@@ -16,3 +16,13 @@ set -x HOMEBREW_CASK_OPTS "--appdir=~/Applications"
 if test -f $HOME/.config/fish/local.fish
   source $HOME/.config/fish/local.fish
 end
+
+eval (hub alias -s)
+
+function fish_user_key_bindings
+  bind \cr 'peco_select_history (commandline -b)'
+  bind \cx\ck peco_kill
+  bind \c] peco_select_ghq_repository
+  bind \cx\cr peco_recentd
+end
+

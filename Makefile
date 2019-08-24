@@ -1,5 +1,4 @@
 symlinks = \
-	atom \
 	bundle \
 	config \
 	local \
@@ -11,6 +10,7 @@ symlinks = \
 	tmux \
 	tmux.conf \
 	vimrc \
+	# atom \
 
 default: | update clean
 
@@ -20,14 +20,14 @@ update: | install
 	brew update
 	brew upgrade
 	gem update
-	apm upgrade --no-confirm
+	# apm upgrade --no-confirm
 	vim +PlugUpgrade +PlugInstall +PlugUpdate +qall
 	mas upgrade
 
 clean: | install
 	brew cleanup
 	gem clean
-	apm clean
+	# apm clean
 	vim +PlugClean +qall
 
 # brew

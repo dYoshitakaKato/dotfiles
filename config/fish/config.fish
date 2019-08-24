@@ -2,9 +2,13 @@
 set fish_greeting ""
 
 # Universal
+set -x RBENV_ROOT ~/.rbenv
+set -x PYENV_ROOT ~/.pyenv
+set -x PATH $PYENV_ROOT/shims $PYENV_ROOT/bin $PATH
 set -x PATH $HOME/.local/bin $PATH
 set -x EDITOR vim
 set -x VISUAL $EDITOR
+set -x PATH ~/Library/Android/sdk/platform-tools $PATH
 
 # Set the Code directory
 set -x DEVELOPER $HOME/Developer

@@ -2,13 +2,12 @@
 set fish_greeting ""
 
 # Universal
-set -x RBENV_ROOT ~/.rbenv
-set -x PYENV_ROOT ~/.pyenv
-set -x PATH $PYENV_ROOT/shims $PYENV_ROOT/bin $PATH
+anyenv init - fish | source
 set -x PATH $HOME/.local/bin $PATH
 set -x EDITOR vim
 set -x VISUAL $EDITOR
 set -x PATH ~/Library/Android/sdk/platform-tools $PATH
+set -x BROWSER open
 
 # Set the Code directory
 set -x DEVELOPER $HOME/Developer
@@ -36,5 +35,8 @@ function fish_user_key_bindings
   bind \ex '__fzf_find_and_execute'
   bind \ed '__fzf_cd'
   bind \eD '__fzf_cd_with_hidden'
+  # hub
+  # https://qiita.com/itkrt2y/items/0671d1f48e66f21241e2
+  bind \cb 'hub browse (ghq list | peco | cut -d "/" -f 2,3)'
 end
 

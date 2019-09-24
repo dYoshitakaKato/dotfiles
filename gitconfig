@@ -15,6 +15,7 @@
     quotepath = false
     safecrlf = true
 	excludesfile = /Users/yoshitaka.kato/.gitignore_global
+	autocrlf = input
 [alias]
  #  https://qiita.com/yukiarrr/items/9c21d97f6c8ac31de157
     # 標準的なコマンド

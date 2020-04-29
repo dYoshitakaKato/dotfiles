@@ -60,8 +60,8 @@
     # スタッシュを選択してdropする
     std = !git stl | xargs git stash drop
 [ghq]
-	root = ~/src
-	root = ~/.dotfiles
+    root = ~/.dotfiles
+    root = ~/src
 
 [credential]
 	helper = osxkeychain
